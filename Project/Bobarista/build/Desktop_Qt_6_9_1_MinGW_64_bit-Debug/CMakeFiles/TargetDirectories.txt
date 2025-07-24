@@ -1,0 +1,9 @@
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Bobarista.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Bobarista_autogen_timestamp_deps.dir
+D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Bobarista_autogen.dir

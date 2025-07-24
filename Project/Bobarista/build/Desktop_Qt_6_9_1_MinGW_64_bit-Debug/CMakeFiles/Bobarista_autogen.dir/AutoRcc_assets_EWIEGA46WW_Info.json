@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/Bobarista_autogen",
+	"CMAKE_BINARY_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista",
+	"CMAKE_SOURCE_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/Bobarista_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/assets/images/Open.png"
+	],
+	"LOCK_FILE" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Bobarista_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.9.1/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/Bobarista_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/NurAina/EDUCATION/DEGREE/1st year/SEM 3/ADS/ASSIGNMENT/CODE/Bobarista/assets.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* === Menubar Styling === */
+QMenuBar {
+    background-color: #fff9f4; /* light latte */
+    color: #5e3c2c; /* mocha text */
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-bottom: 1px solid #e0cfc2;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+}
+
+QMenuBar::item:selected {
+    background-color: #f5d6ba;  /* warm highlight */
+    color: #3b2314;
+    border-radius: 4px;
+}
+
+/* === Menu dropdowns === */
+QMenu {
+    background-color: #fff9f4;
+    color: #3b2314;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 13px;
+    border: 1px solid #c4a484;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 5px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #f1cfa9;
+    color: #2a1a12;
+    border-radius: 4px;
+}
+
+/* === Status bar === */
+QStatusBar {
+    background-color: #fff9f4;
+    color: #5e3c2c;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    padding: 4px 8px;
+    border-top: 1px solid #e0cfc2;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="WelcomePage">
+       <property name="styleSheet">
+        <string notr="true">QWidget#WelcomePage {
+    background-color: #fcefe3; /* soft café beige */
+}
+
+QLabel#lblWelcome {
+    color: #5e3c2c; /* deep mocha text */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;
+    padding: 20px;
+}
+
+QPushButton#btnStart {
+    background-color: #8b5e3c;  /* rich coffee brown */
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+	min-width: 65px;
+    min-height: 25px;
+	max-width: 70px;
+    max-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+QPushButton#btnStart:hover {
+    background-color: #a66f4c;  /* light caramel on hover */
+    color: #fffbe6; /* soft off-white text */
+}
+</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+         <widget class="QWidget" name="left_widget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="lblWelcome">
+             <property name="text">
+              <string>Welcome to Bobarista App!</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignmentFlag::AlignHCenter">
+            <widget class="QPushButton" name="btnStart">
+             <property name="text">
+              <string>Start</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="right_widget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+            <widget class="QLabel" name="lblBackgroundImage">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="assets.qrc">:/images/assets/images/Open.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MainPage">
+       <property name="styleSheet">
+        <string notr="true">QWidget#MainPage {
+    background-color: #fff9f4; /* Light latte background */
+}
+
+/* Page title */
+QLabel#lblPageTitle {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    color: #5e3c2c;
+    padding: 12px;
+}
+
+/* Group box headers */
+QGroupBox {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b2314; /* darker and clearer text */
+    border: 1px solid #d7ccc8;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color: #fff5ee; /* slightly lighter background */
+}
+
+QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 4px 12px;
+}
+
+/* Queue display list views */
+QListWidget, QListView {
+    background-color: #ffffff;
+    border: 1px solid #d7ccc8;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 13px;
+    color: #3e2c20; /* ensure list text is also visible */
+}
+
+/* Input field */
+QLineEdit {
+    background-color: #fffaf7;
+    border: 1px solid #c4a484;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+    color: #3e2c20;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: #fffaf7;
+    border: 1px solid #c4a484;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 13px;
+    color: #3e2c20;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #a66f4c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #8b5e3c;
+    color: #fffce8;
+}
+
+/* Labels inside groupboxes */
+QGroupBox QLabel {
+    color: #2b1d14;  /* even darker for high contrast */
+    font-size: 13px;
+}
+</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>30</number>
+        </property>
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <property name="rightMargin">
+         <number>30</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <item row="5" column="1">
+         <widget class="QGroupBox" name="groupStats">
+          <property name="title">
+           <string>Performance Stats</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="lblInsertArray">
+             <property name="text">
+              <string>Insert Steps (Array):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="lblDeleteLinked">
+             <property name="text">
+              <string>Delete Steps (Linked):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lblDeleteArray">
+             <property name="text">
+              <string>Delete Steps (Array):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lblInsertLinked">
+             <property name="text">
+              <string>Insert Steps (Linked):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QWidget" name="widgetHorizontal_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QGroupBox" name="groupArrayQueue">
+             <property name="title">
+              <string>Array Queue</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <property name="leftMargin">
+               <number>15</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>15</number>
+              </property>
+              <property name="bottomMargin">
+               <number>15</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QListWidget" name="listArrayQueue"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupLinkedQueue">
+             <property name="title">
+              <string>Linked List Queue</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <property name="leftMargin">
+               <number>15</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>15</number>
+              </property>
+              <property name="bottomMargin">
+               <number>15</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QListWidget" name="listLinkedQueue"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupOrderDone">
+             <property name="title">
+              <string>Order Done</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="leftMargin">
+               <number>15</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>15</number>
+              </property>
+              <property name="bottomMargin">
+               <number>15</number>
+              </property>
+              <item>
+               <widget class="QListWidget" name="listOrderDone"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="1" alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QWidget" name="widgetHorizontal_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="btnDequeue">
+             <property name="text">
+              <string>Serve Next</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnReset">
+             <property name="text">
+              <string>Reset</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+         <widget class="QLabel" name="lblPageTitle">
+          <property name="text">
+           <string>Bobarista Queue Benchmark Tool</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" rowspan="2">
+         <widget class="QWidget" name="widgetHorizontal" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="4,1,1">
+           <item>
+            <widget class="QLineEdit" name="lineEditName">
+             <property name="inputMask">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>32767</number>
+             </property>
+             <property name="placeholderText">
+              <string>Customer Name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboDrinkType"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnEnqueue">
+             <property name="text">
+              <string>Add to Queue</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MenuRecords">
+       <property name="styleSheet">
+        <string notr="true">QWidget#MenuRecords {
+    background-color: #fff9f4; /* Light latte background */
+}
+
+/* Page title */
+QLabel#lblMenuTitle {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    color: #5e3c2c;
+    padding: 12px;
+}
+
+/* Group box for menu list */
+QGroupBox#groupMenuItems {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b2314;
+    border: 1px solid #d7ccc8;
+    border-radius: 6px;
+    background-color: #fff5ee;
+    margin-top: 6px;
+}
+
+QGroupBox#groupMenuItems:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 4px 12px;
+}
+
+/* Menu list */
+QListWidget#listMenuItems {
+    background-color: #ffffff;
+    border: 1px solid #d7ccc8;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 13px;
+    color: #3e2c20;
+}
+
+/* Input fields */
+QLineEdit#lineDrinkName, QLineEdit#linePriceTag {
+    background-color: #fffaf7;
+    border: 1px solid #c4a484;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 13px;
+    color: #3e2c20;
+}
+
+/* RM label */
+QLabel#lblRM {
+    color: #2b1d14;
+    font-size: 13px;
+}
+
+/* Buttons */
+QPushButton#btnAdd, QPushButton#btnDelete {
+    background-color: #a66f4c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    border: none;
+}
+
+QPushButton#btnAdd:hover, QPushButton#btnDelete:hover {
+    background-color: #8b5e3c;
+    color: #fffce8;
+}
+</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="leftMargin">
+         <number>30</number>
+        </property>
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <property name="rightMargin">
+         <number>30</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="lblMenuTitle">
+          <property name="text">
+           <string>This is Menu Records</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widgetHorizontal_4" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>100</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLineEdit" name="lineDrinkName">
+             <property name="placeholderText">
+              <string>Drink's Name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lblRM">
+             <property name="text">
+              <string>RM: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="linePriceTag">
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+             <property name="placeholderText">
+              <string>6.00</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnAdd">
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnDelete">
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupMenuItems">
+          <property name="title">
+           <string>List of Menu Items</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>15</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>15</number>
+           </property>
+           <property name="bottomMargin">
+            <number>15</number>
+           </property>
+           <item>
+            <widget class="QListWidget" name="listMenuItems"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="StatisticPerformance">
+       <property name="styleSheet">
+        <string notr="true">QWidget#StatisticPerformance {
+    background-color: #fff9f4; /* Light latte background */
+}
+
+/* ALSO style the internal container */
+QWidget#widget_2 {
+    background-color: #fff9f4;
+}
+
+/* Page title */
+QLabel#lblTitleStats {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    color: #5e3c2c;
+    padding: 12px;
+}
+
+/* Buttons */
+QPushButton#btnGenerateChart, QPushButton#btnResetChart {
+    background-color: #a66f4c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    border: none;
+}
+
+QPushButton#btnGenerateChart:hover, QPushButton#btnResetChart:hover {
+    background-color: #8b5e3c;
+    color: #fffce8;
+}
+
+QChartView#chartViewStats {
+    background-color: #fff9f4; 
+    border: 1px solid #d7ccc8;
+    border-radius: 4px;
+    padding: 10px;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop">
+         <widget class="QLabel" name="lblTitleStats">
+          <property name="text">
+           <string>Statistic Performances</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QChartView" name="chartViewStats" native="true"/>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="btnGenerateChart">
+                <property name="text">
+                 <string>Generate Chart</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnResetChart">
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>797</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Navigation">
+    <property name="title">
+     <string>Navigation</string>
+    </property>
+    <addaction name="actionMainPage"/>
+    <addaction name="actionMenu_Resources"/>
+    <addaction name="actionStatistic_Perfomances"/>
+    <addaction name="actionLog_Out"/>
+   </widget>
+   <addaction name="Navigation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMainPage">
+   <property name="text">
+    <string>Main Page</string>
+   </property>
+  </action>
+  <action name="actionMenu_Resources">
+   <property name="text">
+    <string>Menu Resources</string>
+   </property>
+  </action>
+  <action name="actionStatistic_Perfomances">
+   <property name="text">
+    <string>Statistic Perfomances</string>
+   </property>
+  </action>
+  <action name="actionLog_Out">
+   <property name="text">
+    <string>Log Out</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header location="global">qchartview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
